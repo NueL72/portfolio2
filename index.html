@@ -6,32 +6,138 @@
   <link href="./style.css" rel="stylesheet">
   <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 </head>
-<body>
-  <div class="bg-red-400">
-    <div class="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
-      <div class="relative isolate overflow-hidden bg-gray-900 px-6 pt-16 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
-        <svg viewBox="0 0 1024 1024" class="absolute top-1/2 left-1/2 -z-10 size-[64rem] -translate-y-1/2 [mask-image:radial-gradient(closest-side,white,transparent)] sm:left-full sm:-ml-80 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2 lg:translate-y-0" aria-hidden="true">
-          <circle cx="512" cy="512" r="512" fill="url(#759c1415-0410-454c-8f7c-9a820de03641)" fill-opacity="0.7" />
-          <defs>
-            <radialGradient id="759c1415-0410-454c-8f7c-9a820de03641">
-              <stop stop-color="#7775D6" />
-              <stop offset="1" stop-color="#E935C1" />
-            </radialGradient>
-          </defs>
-        </svg>
-        <div class="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
-          <h2 class="text-3xl font-semibold tracking-tight text-balance text-white sm:text-4xl">Boost your productivity. Start using our app today.</h2>
-          <p class="mt-6 text-lg/8 text-pretty text-gray-300">Ac euismod vel sit maecenas id pellentesque eu sed consectetur. Malesuada adipiscing sagittis vel nulla.</p>
-          <div class="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
-            <a href="#" class="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-xs hover:bg-gray-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Get started</a>
-            <a href="#" class="text-sm/6 font-semibold text-white">Learn more <span aria-hidden="true">→</span></a>
+
+  <body class="bg-gray-50 text-gray-900">
+    <!-- Header -->
+    <!-- <header class="bg-indigo-600 text-white p-6 shadow-md">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Your Name</h1>
+            <nav>
+                <ul class="flex space-x-8">
+                    <li><a href="#about" class="hover:text-indigo-300">About</a></li>
+                    <li><a href="#skills" class="hover:text-indigo-300">Skills</a></li>
+                    <li><a href="#experience" class="hover:text-indigo-300">Experience</a></li>
+                    <li><a href="#contact" class="hover:text-indigo-300">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header> -->
+
+    <header class="bg-indigo-600 text-white p-6 shadow-md">
+      <div class="max-w-7xl mx-auto flex justify-between items-center">
+          <h1 class="text-2xl font-bold">Your Name</h1>
+
+          <!-- Desktop Navigation -->
+          <nav class=" lg:flex space-x-8">
+              <a href="#about" class="hover:text-indigo-300">About</a>
+              <a href="#skills" class="hover:text-indigo-300">Skills</a>
+              <a href="#experience" class="hover:text-indigo-300">Experience</a>
+              <a href="#contact" class="hover:text-indigo-300">Contact</a>
+          </nav>
+
+          <!-- Mobile Hamburger Icon -->
+          <div class="lg:hidden">
+              <button id="hamburger-icon" class="text-white">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                  </svg>
+              </button>
           </div>
-        </div>
-        <div class="relative mt-16 h-80 lg:mt-8">
-          <img class="absolute top-0 left-0 w-[57rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10" src="https://tailwindcss.com/plus-assets/img/component-images/dark-project-app-screenshot.png" alt="App screenshot" width="1824" height="1080">
-        </div>
       </div>
-    </div>
-  </div>
-</body>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="lg:hidden hidden bg-indigo-700 text-white p-6 space-y-4">
+          <a href="#about" class="block hover:text-indigo-300">About</a>
+          <a href="#skills" class="block hover:text-indigo-300">Skills</a>
+          <a href="#experience" class="block hover:text-indigo-300">Experience</a>
+          <a href="#contact" class="block hover:text-indigo-300">Contact</a>
+      </div>
+  </header>
+
+
+    <!-- Hero Section -->
+    <section id="hero" class="bg-indigo-600 text-white py-20">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-5xl font-semibold">Hello, I'm Your Name</h2>
+            <p class="mt-4 text-xl">A passionate web developer with expertise in modern technologies.</p>
+            <a href="#contact" class="mt-6 inline-block bg-white text-indigo-600 px-6 py-3 rounded-full font-semibold hover:bg-indigo-100">Contact Me</a>
+        </div>
+    </section>
+  
+    <!-- About Section -->
+    <section id="about" class="py-20">
+        <div class="max-w-7xl mx-auto text-center px-4">
+            <h3 class="text-3xl font-semibold mb-8">About Me</h3>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">I am a passionate full-stack web developer who loves creating innovative and user-friendly websites and applications. With a strong background in both front-end and back-end development, I aim to provide high-quality solutions that meet clients' needs.</p>
+        </div>
+    </section>
+  
+    <!-- Skills Section -->
+    <section id="skills" class="bg-gray-100 py-20">
+        <div class="max-w-7xl mx-auto text-center px-4">
+            <h3 class="text-3xl font-semibold mb-8">My Skills</h3>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="flex flex-col items-center">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/javascript.svg" alt="JavaScript" class="w-12 h-12 mb-4">
+                    <p class="font-semibold">JavaScript</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/react.svg" alt="React" class="w-12 h-12 mb-4">
+                    <p class="font-semibold">React</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/node-dot-js.svg" alt="Node.js" class="w-12 h-12 mb-4">
+                    <p class="font-semibold">Node.js</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/python.svg" alt="Python" class="w-12 h-12 mb-4">
+                    <p class="font-semibold">Python</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Experience Section -->
+    <section id="experience" class="py-20">
+        <div class="max-w-7xl mx-auto text-center px-4">
+            <h3 class="text-3xl font-semibold mb-8">Work Experience</h3>
+            <div class="space-y-8">
+              <div class="bg-white shadow-lg rounded-lg p-6">
+                <h4 class="text-2xl font-semibold">Frontend Developer at Tech Company</h4>
+                <p class="text-gray-600">May 2020 - Present</p>
+                    <p class="mt-4 text-lg">Worked on building and maintaining web applications using React, JavaScript, and CSS. Responsible for optimizing user interfaces and ensuring a seamless user experience.</p>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg p-6">
+                    <h4 class="text-2xl font-semibold">Backend Developer at Web Agency</h4>
+                    <p class="text-gray-600">January 2018 - April 2020</p>
+                    <p class="mt-4 text-lg">Developed RESTful APIs and integrated databases using Node.js and MongoDB. Focused on enhancing application performance and scalability.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+  
+    <!-- Contact Section -->
+    <section id="contact" class="bg-indigo-600 text-white py-20">
+        <div class="max-w-7xl mx-auto text-center">
+            <h3 class="text-3xl font-semibold mb-8">Get In Touch</h3>
+            <p class="text-xl mb-8">Feel free to reach out if you'd like to work together or if you have any questions!</p>
+            <a href="mailto:your-email@example.com" class="bg-white text-indigo-600 px-6 py-3 rounded-full font-semibold hover:bg-indigo-100">Email Me</a>
+          </div>
+        </section>
+        
+        <!-- Footer -->
+        <footer class="bg-gray-900 text-white py-4 text-center">
+          <p>&copy; 2025 Your Name. All rights reserved.</p>
+        </footer>
+      <script>
+        const hamburgerIcon = document.getElementById("hamburger-icon");
+        const mobileMenu = document.getElementById("mobile-menu");
+  
+        hamburgerIcon.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
+    </script>
+    
+  </body>
+
 </html>
