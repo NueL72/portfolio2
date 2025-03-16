@@ -1,13 +1,17 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./style.css" rel="stylesheet">
-  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./style.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nabla&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  </head>
 
-  <body class="bg-gray-50 text-gray-900">
+  <body class="text-black" style="background-color: white">
     <!-- Header -->
     <!-- <header class="bg-indigo-600 text-white p-6 shadow-md">
         <div class="max-w-7xl mx-auto flex justify-between items-center">
@@ -23,58 +27,106 @@
         </div>
     </header> -->
 
-    <header class="bg-indigo-600 text-white p-6 shadow-md">
-      <div class="max-w-7xl mx-auto flex justify-between items-center">
-          <h1 class="text-2xl font-bold">Your Name</h1>
+    <header class="text-black p-6 shadow-md" style="background-color: white">
+      <div class="max-w-6xl mx-auto flex justify-between items-center">
+        <h1 class="text-2xl font-bold">Your Name</h1>
 
-          <!-- Desktop Navigation -->
-          <nav class=" lg:flex space-x-8">
-              <a href="#about" class="hover:text-indigo-300">About</a>
-              <a href="#skills" class="hover:text-indigo-300">Skills</a>
-              <a href="#experience" class="hover:text-indigo-300">Experience</a>
-              <a href="#contact" class="hover:text-indigo-300">Contact</a>
-          </nav>
+        <!-- Desktop Navigation -->
+        <nav class="lg:flex space-x-8">
+          <a href="#about" class="hover:text-indigo-300">About</a>
+          <a href="#skills" class="hover:text-indigo-300">Skills</a>
+          <a href="#experience" class="hover:text-indigo-300">Experience</a>
+          <a href="#contact" class="hover:text-indigo-300">Contact</a>
+        </nav>
 
-          <!-- Mobile Hamburger Icon -->
-          <div class="lg:hidden">
-              <button id="hamburger-icon" class="text-white">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                  </svg>
-              </button>
-          </div>
+        <!-- Mobile Hamburger Icon -->
+        <div class="lg:hidden">
+          <button id="hamburger-icon" class="text-white">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              class="h-6 w-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
       </div>
 
       <!-- Mobile Menu -->
-      <div id="mobile-menu" class="lg:hidden hidden bg-indigo-700 text-white p-6 space-y-4">
-          <a href="#about" class="block hover:text-indigo-300">About</a>
-          <a href="#skills" class="block hover:text-indigo-300">Skills</a>
-          <a href="#experience" class="block hover:text-indigo-300">Experience</a>
-          <a href="#contact" class="block hover:text-indigo-300">Contact</a>
+      <div
+        id="mobile-menu"
+        class="lg:hidden hidden bg-indigo-700 text-white p-6 space-y-4"
+      >
+        <a href="#about" class="block hover:text-indigo-300">About</a>
+        <a href="#skills" class="block hover:text-indigo-300">Skills</a>
+        <a href="#experience" class="block hover:text-indigo-300">Experience</a>
+        <a href="#contact" class="block hover:text-indigo-300">Contact</a>
       </div>
-  </header>
-
+    </header>
 
     <!-- Hero Section -->
-    <section id="hero" class="bg-indigo-600 text-white py-20">
-        <div class="max-w-7xl mx-auto text-center">
-            <h2 class="text-5xl font-semibold">Hello, I'm Your Name</h2>
-            <p class="mt-4 text-xl">A passionate web developer with expertise in modern technologies.</p>
-            <a href="#contact" class="mt-6 inline-block bg-white text-indigo-600 px-6 py-3 rounded-full font-semibold hover:bg-indigo-100">Contact Me</a>
+    <section id="hero" class="text-black" style="background-color: white">
+      <div class="max-w-6xl mx-auto">
+        <div class="max-w-xl ml-5">
+          <h2 class="text-3xl font-semibold">Hi, 👋 I'm</h2>
+          <h2 class="text-5xl font-[Nabla]">Emmanuel Paul Siaga</h2>
+
+          <!-- <span class="wave">👋</span> -->
+          <p class="mt-4 text-3xl" style="color: #11b5d2">
+            Web & Mobile Software Engineer
+          </p>
+          <p class="mt-4 text-xl">
+            I'm a professional software engineer with <br />
+            extensive development skills and knowledge, <br />
+            based in Dar es Salaam, Tanzania.
+          </p>
         </div>
+
+        <!-- <div class="max-w-6xl">
+                <img src="src/img/emma_1.png" alt="" style="float: right; height: 300px;">
+            </div> -->
+      </div>
     </section>
-  
+
     <!-- About Section -->
-    <section id="about" class="py-20">
-        <div class="max-w-7xl mx-auto text-center px-4">
+    <section id="about" class="bg-white py-20">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="grid grid-flow-col grid-rows-3 gap-4">
+          <div class="col-span-3 row-span-3 ...">
             <h3 class="text-3xl font-semibold mb-8">About Me</h3>
-            <p class="text-xl text-gray-600 max-w-2xl mx-auto">I am a passionate full-stack web developer who loves creating innovative and user-friendly websites and applications. With a strong background in both front-end and back-end development, I aim to provide high-quality solutions that meet clients' needs.</p>
+            <p class="text-xl text-gray-600 mx-auto">
+              I am a passionate full-stack web developer who loves creating
+              innovative <br />
+              and user-friendly websites and applications. <br />
+              With a strong background in both front-end and back-end
+              development,<br />
+              I aim to provide high-quality solutions that meet clients' needs.
+            </p>
+          </div>
+
+          <div class="col-span-3 row-span-3 ...">
+            <img
+              src="src/img/emma_1.png"
+              alt="Your Image"
+              class="w-40 h-40 md:w-60 md:h-60 object-cover rounded-full shadow-md"
+            />
+          </div>
         </div>
+      </div>
     </section>
-  
+
     <!-- Skills Section -->
-    <section id="skills" class="bg-gray-100 py-20">
-        <div class="max-w-7xl mx-auto text-center px-4">
+    <section id="skills" class="py-20" style="background-color: #023246">
+      <!-- <div class="max-w-7xl mx-auto text-center px-4">
+
             <h3 class="text-3xl font-semibold mb-8">My Skills</h3>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
                 <div class="flex flex-col items-center">
@@ -94,50 +146,89 @@
                     <p class="font-semibold">Python</p>
                 </div>
             </div>
-        </div>
+        </div> -->
+<div class="max-w-7xl mx-auto text-center px-4">
+  <div class="grid grid-flow-col grid-rows-4 gap-4">
+<div class="bg-red-900">01</div>
+<!-- ... -->
+<div class="bg-red-900">05</div>
+<div class="row-span-3 grid grid-rows-subgrid gap-4">
+<div class="row-start-2">06</div>
+</div>
+<div class="bg-red-900">07</div>
+<!-- ... -->
+<div class="bg-red-900">10</div>
+</div>
+
+</div>
+
     </section>
-    
+
     <!-- Experience Section -->
     <section id="experience" class="py-20">
-        <div class="max-w-7xl mx-auto text-center px-4">
-            <h3 class="text-3xl font-semibold mb-8">Work Experience</h3>
-            <div class="space-y-8">
-              <div class="bg-white shadow-lg rounded-lg p-6">
-                <h4 class="text-2xl font-semibold">Frontend Developer at Tech Company</h4>
-                <p class="text-gray-600">May 2020 - Present</p>
-                    <p class="mt-4 text-lg">Worked on building and maintaining web applications using React, JavaScript, and CSS. Responsible for optimizing user interfaces and ensuring a seamless user experience.</p>
-                </div>
-                <div class="bg-white shadow-lg rounded-lg p-6">
-                    <h4 class="text-2xl font-semibold">Backend Developer at Web Agency</h4>
-                    <p class="text-gray-600">January 2018 - April 2020</p>
-                    <p class="mt-4 text-lg">Developed RESTful APIs and integrated databases using Node.js and MongoDB. Focused on enhancing application performance and scalability.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-  
-    <!-- Contact Section -->
-    <section id="contact" class="bg-indigo-600 text-white py-20">
-        <div class="max-w-7xl mx-auto text-center">
-            <h3 class="text-3xl font-semibold mb-8">Get In Touch</h3>
-            <p class="text-xl mb-8">Feel free to reach out if you'd like to work together or if you have any questions!</p>
-            <a href="mailto:your-email@example.com" class="bg-white text-indigo-600 px-6 py-3 rounded-full font-semibold hover:bg-indigo-100">Email Me</a>
+      <div class="max-w-7xl mx-auto text-center px-4">
+        <h3 class="text-3xl font-semibold mb-8">Work Experience</h3>
+        <div class="space-y-8">
+          <div class="bg-white shadow-lg rounded-lg p-6">
+            <h4 class="text-2xl font-semibold">
+              Frontend Developer at Tech Company
+            </h4>
+            <p class="text-gray-600">May 2020 - Present</p>
+            <p class="mt-4 text-lg">
+              Worked on building and maintaining web applications using React,
+              JavaScript, and CSS. Responsible for optimizing user interfaces
+              and ensuring a seamless user experience.
+            </p>
           </div>
-        </section>
-        
-        <!-- Footer -->
-        <footer class="bg-gray-900 text-white py-4 text-center">
-          <p>&copy; 2025 Your Name. All rights reserved.</p>
-        </footer>
-      <script>
-        const hamburgerIcon = document.getElementById("hamburger-icon");
-        const mobileMenu = document.getElementById("mobile-menu");
-  
-        hamburgerIcon.addEventListener("click", () => {
-            mobileMenu.classList.toggle("hidden");
-        });
-    </script>
-    
-  </body>
+          <div class="bg-white shadow-lg rounded-lg p-6">
+            <h4 class="text-2xl font-semibold">
+              Backend Developer at Web Agency
+            </h4>
+            <p class="text-gray-600">January 2018 - April 2020</p>
+            <p class="mt-4 text-lg">
+              Developed RESTful APIs and integrated databases using Node.js and
+              MongoDB. Focused on enhancing application performance and
+              scalability.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- Contact Section -->
+    <section
+      id="contact"
+      class="text-white py-20"
+      style="background-color: #023246"
+    >
+      <div class="max-w-7xl mx-auto text-center">
+        <h3 class="text-3xl font-semibold mb-8">Get In Touch</h3>
+        <p class="text-xl mb-8">
+          Feel free to reach out if you'd like to work together or if you have
+          any questions!
+        </p>
+        <a
+          href="mailto:your-email@example.com"
+          class="bg-white text-indigo-600 px-6 py-3 rounded-full font-semibold hover:bg-indigo-100"
+          >Email Me</a
+        >
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="text-white py-4 text-center"
+      style="background-color: #023246"
+    >
+      <p>&copy; 2025 Your Name. All rights reserved.</p>
+    </footer>
+    <script>
+      const hamburgerIcon = document.getElementById("hamburger-icon");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      hamburgerIcon.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
 </html>
