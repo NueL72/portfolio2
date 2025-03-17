@@ -34,7 +34,9 @@
 
     <header class="text-black p-6 shadow-md" style="background-color: white">
       <div class="max-w-6xl mx-auto flex justify-between items-center">
-        <h1 class="text-2xl font-bold">Your Name</h1>
+        <h1 class="text-2xl font-bold">
+          <img src="src/img/emma_1.png" alt="logo" style="width:50px">
+        </h1>
 
         <!-- Desktop Navigation -->
         <nav class="lg:flex space-x-8 font-[fira_code]">
@@ -121,13 +123,13 @@
             </p>
           </div>
 
-          <div class="col-span-3 row-span-3 ...">
+          <!-- <div class="col-span-3 row-span-3 ...">
             <img
               src="src/img/emma_1.png"
               alt="Your Image"
               class="w-40 h-40 md:w-60 md:h-60 object-cover rounded-full shadow-md"
             />
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
@@ -145,16 +147,16 @@
               alt="JavaScript"
               class="w-12 h-12 mb-4"
             />
-            <p class="font-[fira_code]">React</p>
+            <p class="font-[fira_code]">REACT</p>
           </div>
-          <!-- <div class="flex flex-col items-center">
+          <div class="flex flex-col items-center">
             <img
-              src="https://dev-joshuapsiyame.com/assets/react-96-Drka4mlx.png"
+              src="src/img/PHP/flutter.png"
               alt="JavaScript"
               class="w-12 h-12 mb-4"
             />
-            <p class="font-semibold">JavaScript</p>
-          </div> -->
+            <p class="font-[fira_code]">FLUTTER</p>
+          </div>
           <div class="flex flex-col items-center">
             <img
               src="data:image/png;base64,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"
@@ -195,7 +197,7 @@
               alt="Python"
               class="w-12 h-12 mb-4"
             />
-            <p class="font-[fire_code]">PhP</p>
+            <p class="font-[fire_code]">PHP</p>
           </div>
 
           <div class="flex flex-col items-center">
